@@ -2,7 +2,7 @@
 source('Library.R')
 
 ## Set the working directory
-setwd("~/Projects/PEIMAN2DBUpd/")
+setwd("/home/payman/")
 
 ## Define the prefix ##
 prefix <- 'UniProtReviewed_'
@@ -11,34 +11,34 @@ prefix <- 'UniProtReviewed_'
 today_date = Sys.Date()
 
 ## Write the console to a log file
-sink(file = paste0('Log/', today_date,'_LOGFILE.txt'), append = TRUE, type = c('output', 'message'), split = FALSE)
+#sink(file = paste0('Log/', today_date,'_LOGFILE.txt'), append = TRUE, type = c('output', 'message'), split = FALSE)
 
 ## Define suffix ##
 suffix <- '.dat.gz'
 
 ## Generate file name ##
-file_name <- paste0('~/Projects/PEIMAN2DBUpd/DBLog/', prefix, today_date, suffix)
+file_name <- paste0('/home/payman/', prefix, today_date, suffix)
 
 ## Download the latest version from UniProt ##
 print('Downloading file from UniProt ...')
-system(command = 'sh ./download.sh')
+system(command = 'sh download.sh')
 
 ## Unzip the file ##
 print('Unzip the UniProt file ...')
-system( paste0('gzip -d ', '~/Projects/PEIMAN2DBUpd/DBLog/uniprot_sprot.dat.gz') )
-system( paste0('mv ~/Projects/PEIMAN2DBUpd/DBLog/uniprot_sprot.dat ', '~/Projects/PEIMAN2DBUpd/DBLog/', prefix, today_date, '.dat') )
+system( paste0('gzip -d ', '/home/payman/uniprot_sprot.dat.gz') )
+system( paste0('mv /home/payman/uniprot_sprot.dat ', '/home/payman/', prefix, today_date, '.dat') )
 
 
 ## Generate INPUT.txt and OUTPUT.txt files for c++ program ##
-Ifile <- paste0('/home/payman/Projects/PEIMAN2DBUpd/DBLog/',    prefix, today_date, '.dat')
+Ifile <- paste0('/home/payman/',    prefix, today_date, '.dat')
 writeLines(text = Ifile, con = 'INPUT.txt')
-Ofile <- paste0('/home/payman/Projects/PEIMAN2DBUpd/DBLog/6C_', prefix, today_date, '.dat')
+Ofile <- paste0('/home/payman/6C_', prefix, today_date, '.dat')
 writeLines(text = Ofile, con = 'OUTPUT.txt')
 
 
 ## Call c++ program
 print('Call cpp program ...')
-system(command = 'sh ./6columns.sh')
+system(command = 'sh 6columns.sh')
 
 
 
@@ -48,8 +48,8 @@ MakePEIMAN(dt = today_date)
 
 
 ## Update the package with the new data
-load(file = paste0('/home/payman/Projects/PEIMAN2DBUpd/DBLog/peiman_database_', today_date, '.RData') )
-usethis::proj_set(path = '/home/payman/Projects/PEIMAN2DBUpd/')
+load(file = paste0('/home/payman/peiman_database_', today_date, '.RData') )
+usethis::proj_set(path = '/home/payman/')
 usethis::use_data(peiman_database, internal = TRUE, overwrite = TRUE)
 
 # Add and commit changes

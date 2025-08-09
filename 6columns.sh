@@ -1,5 +1,5 @@
 #!/bin/bash
 
 # Call UniprotModule to reduce file size - select required features
-cd ~/Projects/PEIMAN2DBUpd/cmodule
+cd /mnt/c/Users/payma/OneDrive/Desktop/PEIMAN2-DBUpd
 ./UniProtModule

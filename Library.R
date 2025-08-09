@@ -401,8 +401,8 @@ MakePEIMAN = function(dt){
   missing_data <- missing_data %>% mutate(PTM = NA)
   peiman_database <- dplyr::bind_rows(peiman_database, missing_data)
   
-  save(x = peiman_database,  file = paste0('/home/payman/Projects/PEIMAN2DBUpd/DBLog/peiman_database_', dt, '.RData') )
-  save(x = uniprot_ptm_list, file = paste0('/home/payman/Projects/PEIMAN2DBUpd/DBLog/uniprot_ptm_list', dt, '.RData') )
+  save(x = peiman_database,  file = paste0('/home/payman/peiman_database_', dt, '.RData') )
+  save(x = uniprot_ptm_list, file = paste0('/home/payman/uniprot_ptm_list', dt, '.RData') )
   message('Saved curated files!')
   
 }
