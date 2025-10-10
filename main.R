@@ -46,25 +46,24 @@ cat('\n')
 fname <- paste0('tmp/uniprot_sprot_', Sys.Date(), '.dat.gz')
 if( file.exists(fname) ){
   file.remove(fname)
+  cat( green('Succesfully deleted ', fname) )
 }
-cat( green('Succesfully deleted ', fname) )
 
 
 cat('\n')
 fname <- paste0('tmp/uniprot_sprot_', Sys.Date(), '.dat')
 if( file.exists(fname) ){
   file.remove(fname)
+  cat( green('Succesfully deleted ', fname) )
 }
-cat( green('Succesfully deleted ', fname) )
-cat('\n')
 
 
 cat('\n')
 fname <- paste0('tmp/RED_uniprot_sprot_', Sys.Date(), '.dat')
 if( file.exists(fname) ){
   file.remove(fname)
+  cat( green('Succesfully deleted ', fname), '\n' )
 }
-cat( green('Succesfully deleted ', fname), '\n' )
 cat('\n')
 
 
