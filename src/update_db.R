@@ -1,4 +1,4 @@
-update_db = function(){
+update_db = function(parallel = TRUE){
   
   # Compare the latest local version with online repo to see if we need to update
 
@@ -15,8 +15,11 @@ update_db = function(){
   protein_List <- create_protein_list()
 
   # Make PEIMAN
-  #peiman_temp_db <- make_peiman(x = protein_List)
-  peiman_temp_db <- make_peiman_parallel(x = protein_List)
+  if(parallel){
+    peiman_temp_db <- make_peiman_parallel(x = protein_List)
+  }else{
+    peiman_temp_db <- make_peiman(x = protein_List)
+  }
 
   # Download PTM keywords table from UniProt
   cat('\n')

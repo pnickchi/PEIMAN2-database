@@ -1,3 +1,10 @@
+# Create the log file
+sink( paste0('log/log_runtime_at_', Sys.Date(), '.txt'), append = TRUE ) 
+
+# Prints out the run time log
+cat( paste0('--------- Run at ', Sys.Date(), ' ---------') )
+
+
 # 
 # Load packages
 #
@@ -67,3 +74,4 @@ if( file.exists(fname) ){
 cat('\n')
 
 
+cat( paste0('--------- End of run at ', Sys.Date(), ' ---------') )

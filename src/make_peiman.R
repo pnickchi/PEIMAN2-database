@@ -11,8 +11,10 @@ make_peiman = function(x){
   
   end.time   <- Sys.time()
   
-  message( 'Successfully made draft of PEIMAN DB in ' , end.time - start.time)
-
+  cat('\n')
+  cat( green('Successfully made draft of PEIMAN DB in ' , end.time - start.time) )
+  cat('\n')
+  
   return(peiman_temp_db)
   
 }
