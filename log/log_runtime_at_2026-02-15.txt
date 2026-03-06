@@ -1,0 +1,39 @@
+--------- Run at 2026-02-15 ---------
+Download is completed:  tmp/uniprot_sprot_2026-02-15.dat.gz
+
+Extraction is completed:  tmp/uniprot_sprot_2026-02-15.dat
+
+Processing/Reading the file:  tmp/uniprot_sprot_2026-02-15.dat  to reduce file size ...
+
+Finished reducing the size of file:  tmp/uniprot_sprot_2026-02-15.dat
+
+The output file with reduced size is generated in:  tmp/RED_uniprot_sprot_2026-02-15.dat
+
+Reading/Processing file:  tmp/RED_uniprot_sprot_2026-02-15.dat
+
+Reading proteins ...
+
+Finished reading proteins from:  tmp/RED_uniprot_sprot_2026-02-15.dat
+
+20  cores found in your system ...
+
+Starting to make the draft of PEIMAN DB in parallel with  19  cores ...
+
+Run time:  1.39691490332286
+
+Successfully made draft of PEIMAN DB in  1.39691490332286
+
+Get PTM keywords table from uniprot ...
+
+Building the final database ...
+
+Finished building the final database!
+ 
+Saving database in DBLog/ folder ... 
+
+
+Succesfully deleted  tmp/uniprot_sprot_2026-02-15.dat.gz
+Succesfully deleted  tmp/uniprot_sprot_2026-02-15.dat
+Succesfully deleted  tmp/RED_uniprot_sprot_2026-02-15.dat 
+
+--------- End of run at 2026-02-15 ---------
