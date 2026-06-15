@@ -1,13 +1,6 @@
 --------- Run at 2026-06-15 ---------
 Download is completed:  tmp/uniprot_sprot_2026-06-15.dat.gz
 
---------- Run at 2026-06-15 ---------
-Download is completed:  tmp/uniprot_sprot_2026-06-15.dat.gz
-
-Called from: extract_gz_file()
---------- Run at 2026-06-15 ---------
-Download is completed:  tmp/uniprot_sprot_2026-06-15.dat.gz
-
 Extraction is completed:  tmp/uniprot_sprot_2026-06-15.dat
 
 Processing/Reading the file:  tmp/uniprot_sprot_2026-06-15.dat  to reduce file size ...
@@ -26,9 +19,9 @@ Finished reading proteins from:  tmp/RED_uniprot_sprot_2026-06-15.dat
 
 Starting to make the draft of PEIMAN DB in parallel with  19  cores ...
 
-Run time:  1.55847597519557
+Run time:  1.57295778592428
 
-Successfully made draft of PEIMAN DB in  1.55847597519557
+Successfully made draft of PEIMAN DB in  1.57295778592428
 
 Get PTM keywords table from uniprot ...
 
@@ -43,25 +36,4 @@ Succesfully deleted  tmp/uniprot_sprot_2026-06-15.dat.gz
 Succesfully deleted  tmp/uniprot_sprot_2026-06-15.dat
 Succesfully deleted  tmp/RED_uniprot_sprot_2026-06-15.dat 
 
---------- End of run at 2026-06-15 ------------------ Run at 2026-06-15 ---------
-Download is completed:  tmp/uniprot_sprot_2026-06-15.dat.gz
-
-Extraction is completed:  tmp/uniprot_sprot_2026-06-15.dat
-Called from: reduce_uniprot_file_size()
---------- Run at 2026-06-15 ---------
-Download is completed:  tmp/uniprot_sprot_2026-06-15.dat.gz
-
-Extraction is completed:  tmp/uniprot_sprot_2026-06-15.dat
-Called from: reduce_uniprot_file_size()
-
-The file already exists - skip to next step. 
-
-
-Extraction is completed:  tmp/uniprot_sprot_2026-06-15.dat
-[1] FALSE
-[1] "tmp/uniprot_sprot_2026-06-15.dat"
-[1] 127
-[1] "tmp/uniprot_sprot_2026-06-15"
-[1] 127
-
-Extraction is completed:  tmp/uniprot_sprot_2026-06-15.dat
+--------- End of run at 2026-06-15 ---------
