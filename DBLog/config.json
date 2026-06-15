@@ -1,0 +1,30 @@
+[
+  {
+    "version": "2025_09_30",
+    "file": "peiman_database_2025_09_30.rds",
+    "url": "https://raw.githubusercontent.com/pnickchi/PEIMAN2-database/main/databases/peiman_database_2025-09-30.rds"
+  },
+  {
+    "version": "2025_10_08",
+    "file": "peiman_database_2025_10_08.rds",
+    "url": "https://raw.githubusercontent.com/pnickchi/PEIMAN2-database/main/databases/peiman_database_2025-10-08.rds"
+  },
+  {
+    "version": "2025_10_09",
+    "file": "peiman_database_2025_10_09.rds",
+    "url": "https://raw.githubusercontent.com/pnickchi/PEIMAN2-database/main/databases/peiman_database_2025-10-09.rds"
+  },
+  {
+    "version": "2026_02_15",
+    "file": "peiman_database_2026_02_15.rds",
+    "url": "https://raw.githubusercontent.com/pnickchi/PEIMAN2-database/main/databases/peiman_database_2026-02-15.rds"
+  },
+  {
+    "version": "2026_03_06",
+    "file": "peiman_database_2026_03_06.rds",
+    "url": "https://raw.githubusercontent.com/pnickchi/PEIMAN2-database/main/databases/peiman_database_2026-03-06.rds"
+  }
+]
+
+
+
