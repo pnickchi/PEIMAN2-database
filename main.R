@@ -28,6 +28,15 @@ tmp <- lapply(X = source_files, FUN = source)
 rm(tmp)
 
 
+#
+# Check if tmp/ folder exists, if not make one!
+#
+if( !dir.exists('tmp/') ){
+  dir.create('tmp/')
+  message('tmp/ directory does not exsist. Create one now ...')
+}
+
+
 # 
 # Call update_db() function to update PEIMAN
 #
@@ -40,9 +49,9 @@ uniprot_ptm_list <- get_PTM_keywords_table_from_uniprot()
 # Save files 
 #
 cat('\n')
-cat( green('Saving database in DBLog/ folder ... \n') )
-saveRDS( object = peiman_database,  file = paste0('DBLog/peiman_database_',  Sys.Date(), '.rds'), compress = 'xz')
-saveRDS( object = uniprot_ptm_list, file = paste0('DBLog/uniprot_ptm_list_', Sys.Date(), '.rds'), compress = 'xz')
+cat( green('Saving database in databases/ folder ... \n') )
+saveRDS( object = peiman_database,  file = paste0('databases/peiman_database_',  Sys.Date(), '.rds'), compress = 'xz')
+saveRDS( object = uniprot_ptm_list, file = paste0('databases/uniprot_ptm_list_', Sys.Date(), '.rds'), compress = 'xz')
 cat('\n')
 
 
