@@ -30,6 +30,42 @@
     "url": "https://raw.githubusercontent.com/pnickchi/PEIMAN2-database/main/databases/peiman_database_2026-03-06.rds"
   },
   {
+    "type": "database",
+    "version": "2026-06-15",
+    "file": "peiman_database_2026-06-15.rds",
+    "url": "https://raw.githubusercontent.com/pnickchi/PEIMAN2-database/main/databases/peiman_database_2026-06-15.rds"
+  },
+  {
+    "type": "ptmlist",
+    "version": "2025-09-30",
+    "file": "uniprot_ptm_list_2025-09-30.rds",
+    "url": "https://raw.githubusercontent.com/pnickchi/PEIMAN2-database/main/databases/uniprot_ptm_list_2025-09-30.rds"
+  },
+  {
+    "type": "ptmlist",
+    "version": "2025-10-08",
+    "file": "uniprot_ptm_list_2025-10-08.rds",
+    "url": "https://raw.githubusercontent.com/pnickchi/PEIMAN2-database/main/databases/uniprot_ptm_list_2025-10-08.rds"
+  },
+  {
+    "type": "ptmlist",
+    "version": "2025-10-09",
+    "file": "uniprot_ptm_list_2025-10-09.rds",
+    "url": "https://raw.githubusercontent.com/pnickchi/PEIMAN2-database/main/databases/uniprot_ptm_list_2025-10-09.rds"
+  },
+  {
+    "type": "ptmlist",
+    "version": "2026-02-15",
+    "file": "uniprot_ptm_list_2026-02-15.rds",
+    "url": "https://raw.githubusercontent.com/pnickchi/PEIMAN2-database/main/databases/uniprot_ptm_list_2026-02-15.rds"
+  },
+  {
+    "type": "ptmlist",
+    "version": "2026-03-06",
+    "file": "uniprot_ptm_list_2026-03-06.rds",
+    "url": "https://raw.githubusercontent.com/pnickchi/PEIMAN2-database/main/databases/uniprot_ptm_list_2026-03-06.rds"
+  },
+  {
     "type": "ptmlist",
     "version": "2026-06-15",
     "file": "uniprot_ptm_list_2026-06-15.rds",
